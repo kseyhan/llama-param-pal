@@ -1,0 +1,47 @@
+{
+    "models": [
+        {
+            "name": "Qwen3",
+            "profiles": [
+                {
+                    "name": "thinking",
+                    "command": "./llama-cli -hf Qwen/Qwen3-8B-GGUF:Q8_0 --jinja --color -ngl 99 -fa -sm row --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0 -c 40960 -n 32768 --no-context-shift",
+                    "references": [
+                        {
+                            "link": "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli"
+                        },
+                        {
+                            "link": "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
+                        }
+                    ]
+                },
+                {
+                    "name": "non thinking",
+                    "command": "./llama-cli -hf Qwen/Qwen3-8B-GGUF:Q8_0 --jinja --color -ngl 99 -fa -sm row --temp 0.7 --top-k 20 --top-p 0.8 --min-p 0 -c 40960 -n 32768 --no-context-shift",
+                    "references": [
+                        {
+                            "link": "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli"
+                        },
+                        {
+                            "link": "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "QwQ",
+            "profiles": [
+                {
+                    "name": "chat",
+                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q4_K_M.gguf --ctx-size 16384 -ngl 99 --temp 0.6 --repeat-penalty 1.1 --dry-multiplier 0.5 --min-p 0.01 --top-k 40 --top-p 0.95 -no-cnv --samplers \"top_k;top_p;min_p;temperature;dry;typ_p;xtc\" --prompt \"<|im_start|>usernCreate a Flappy Bird game in Python.\"",
+                    "references": [
+                        {
+                            "link": "https://huggingface.co/unsloth/QwQ-32B-GGUF"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
