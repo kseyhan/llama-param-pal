@@ -59,23 +59,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "name": "delme",
-            "profiles": [
-                {
-                    "name": "chat",
-                    "command": "./llama.cpp/llama-cli --model unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/Llama-4-Scout-17B-16E-Instruct-UD-IQ2_XXS.gguf --ctx-size 16384 --n-gpu-layers 99 -ot \".ffn_.*_exps.=CPU\" --temp 0.6 --min-p 0.01 --top-p 0.9 -no-cnv --prompt \"<|header_start|>user<|header_end|>\n\nCreate a Flappy Bird game in Python.<|eot|><|header_start|>assistant<|header_end|>\n\n\"",
-                    "references": [
-                        {
-                            "link": "https://www.llama.com/docs/llama-everywhere/running-meta-llama-on-linux/"
-                        },
-                        {
-                            "link": "https://docs.unsloth.ai/basics/llama-4-how-to-run-and-fine-tune"
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }
