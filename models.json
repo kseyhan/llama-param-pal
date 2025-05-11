@@ -56,6 +56,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "more_to_be_deleted",
+            "profiles": [
+                {
+                    "name": "chat",
+                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q4_K_M.gguf --ctx-size 16384 -ngl 99 --temp 0.6 --repeat-penalty 1.1 --dry-multiplier 0.5 --min-p 0.01 --top-k 40 --top-p 0.95 -no-cnv --samplers \"top_k;top_p;min_p;temperature;dry;typ_p;xtc\" --prompt \"<|im_start|>usernCreate a Flappy Bird game in Python.\"",
+                    "references": [
+                        {
+                            "link": "https://huggingface.co/unsloth/QwQ-32B-GGUF"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
