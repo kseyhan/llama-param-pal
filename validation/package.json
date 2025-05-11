@@ -1,0 +1,11 @@
+{
+  "name": "json-validator",
+  "description": "Validate models.json against JSON schema",
+  "version": "1.0.0",
+  "scripts": {
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}

@@ -1,0 +1,12 @@
+group:
+  - files:
+      - source: models.json
+        dest: models.json
+    repos: |
+      kseyhan/llama-param-pal@gh-pages
+  
+  - files:
+      - source: models.json
+        dest: public/models.json
+    repos: |
+      kseyhan/llama-param-pal-frontend
