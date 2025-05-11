@@ -5,12 +5,12 @@
 
 ## 📦 What is this?
 
-Finding the recommended parameters to run llms can sometimes be a cumbersome and timeintensive process. This project aim's to make this whole process a little bit easier to:
+Finding the recommended sampling parameters to run llms can sometimes be a cumbersome and time-consuming process. This project aims to make this whole process a little bit easier to:
 
-- Avoid guesswork when launching models.
-- Contribute references and links to the models documentations.
+- Avoid guesswork when running llms.
+- Contribute references and links to the models recommended parameter documentations.
 
-The project constist of the `models.json` file that serves as the source of knowledge and a frontend that is available under [https://llama-parampal.codecut.de/](https://llama-parampal.codecut.de/) which can be used to quickly search for models in this json.
+The project consists of the `models.json` file that serves as the source of knowledge and a frontend that is available under [https://llama-parampal.codecut.de/](https://llama-parampal.codecut.de/) which can be used to quickly search for models in this json.
 
 ---
 
@@ -20,7 +20,7 @@ The project constist of the `models.json` file that serves as the source of know
 2. Open the `models.json` file
 3. Add your model or a profile under an existing one
 4. Include:
-   - A describing name for the profile
+   - A descriptive name for the profile
    - the llama.cpp CLI parameters
    - At least one valid reference to a documentation of the model creators where those settings are documented.
 5. Validate the JSON:
@@ -31,7 +31,7 @@ The project constist of the `models.json` file that serves as the source of know
    ```
 6. **Submit a Pull Request** - we'll review and merge!
 
-💡 Be sure to keep the JSON valid and consistent in structure. If you're unsure, check how the existing entries are formatted.
+💡 Make sure your JSON is valid and follows the existing structure. When in doubt, use current entries as examples.
 
 ---
 
@@ -43,7 +43,7 @@ Open an issue or join the discussion at [https://github.com/kseyhan/llama-param-
 
 ## 🧪 Related Projects
 
-- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): A Llm inference engine in pure C/C++
+- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): An Llm inference engine in pure C/C++
 
 ---
 
