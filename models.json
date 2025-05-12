@@ -26,7 +26,7 @@
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q4_K_M.gguf --ctx-size 16384 --temp 0.6 --repeat-penalty 1.1 --dry-multiplier 0.5 --min-p 0.01 --top-k 40 --top-p 0.95 -no-cnv --samplers \"top_k;top_p;min_p;temperature;dry;typ_p;xtc\" --prompt \"<|im_start|>usernCreate a Flappy Bird game in Python.\"",
+                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q4_K_M.gguf --ctx-size 16384 --temp 0.6 --repeat-penalty 1.1 --dry-multiplier 0.5 --min-p 0.01 --top-k 40 --top-p 0.95 --samplers \"top_k;top_p;min_p;temperature;dry;typ_p;xtc\"",
                     "references": [
                         "https://modelscope.cn/models/Qwen/QwQ-32B",
                         "https://huggingface.co/Qwen/QwQ-32B",
@@ -40,7 +40,7 @@
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/Llama-4-Scout-17B-16E-Instruct-UD-IQ2_XXS.gguf --ctx-size 16384 -ot \".ffn_.*_exps.=CPU\" --temp 0.6 --min-p 0.01 --top-p 0.9 -no-cnv --prompt \"<|header_start|>user<|header_end|>\\n\\nCreate a Flappy Bird game in Python.<|eot|><|header_start|>assistant<|header_end|>\\n\\n\"",
+                    "command": "./llama-cli --model unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/Llama-4-Scout-17B-16E-Instruct-UD-IQ2_XXS.gguf --ctx-size 16384 -ot \".ffn_.*_exps.=CPU\" --temp 0.6 --min-p 0.01 --top-p 0.9",
                     "references": [
                         "https://www.llama.com/docs/llama-everywhere/running-meta-llama-on-linux/",
                         "https://docs.unsloth.ai/basics/llama-4-how-to-run-and-fine-tune"
