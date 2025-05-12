@@ -28,15 +28,14 @@
                                     "type": "array",
                                     "minItems": 1,
                                     "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "link": {
-                                                "type": "string"
-                                            }
-                                        },
-                                        "required": [
-                                            "link"
-                                        ]
+                                        "type": "string"
+                                    }
+                                },
+                                "notes": {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string"
                                     }
                                 }
                             },
@@ -44,6 +43,9 @@
                                 "name",
                                 "command",
                                 "references"
+                            ],
+                            "optional": [
+                                "notes"
                             ]
                         }
                     }
