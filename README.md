@@ -21,7 +21,7 @@ The project consists of the `models.json` file that serves as the source of know
 3. Add your model or a profile under an existing one
 4. Include:
    - A descriptive name for the profile
-   - the llama.cpp CLI parameters
+   - the llama.cpp CLI sampling parameters
    - At least one valid reference to a documentation of the model creators where those settings are documented.
 5. Validate the JSON:
    ```
@@ -29,9 +29,14 @@ The project consists of the `models.json` file that serves as the source of know
    npm install
    npm run validate
    ```
+
 6. **Submit a Pull Request** - we'll review and merge!
 
-💡 Make sure your JSON is valid and follows the existing structure. When in doubt, use current entries as examples.
+💡 Make sure your JSON is valid and follows the existing structure. When in doubt, use current entries as examples. 
+
+### Do's and don't do's when adding a commandline string.
+- Make sure you define the max --ctx-size that is defined in the gguf headers as context_length of the model you are referencing.  ( You can look it up in the huggingface gguf metadata viewer panel. )
+- Don't add any hardware dependend parameters like ngl, sm and such. What this json is trying to accomplish is to document the sampling parameters.
 
 ---
 
