@@ -124,6 +124,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Mistral-Small-24B-Instruct-2501",
+            "profiles": [
+                {
+                    "name": "chat",
+                    "command": "./llama-cli --model bartowski/Mistral-Small-24B-Instruct-2501-GGUF/Mistral-Small-24B-Instruct-2501-Q4_K_M.gguf --ctx-size 32768 --n-gpu-layers 99 --temp 0.15",
+                    "references": [
+                        {
+                            "link": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
