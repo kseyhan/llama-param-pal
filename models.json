@@ -96,6 +96,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "DeepCoder-Preview",
+            "profiles": [
+                {
+                    "name": "chat",
+                    "command": "./llama-cli --model bartowski/agentica-org_DeepCoder-14B-Preview-GGUF/ agentica-org_DeepCoder-14B-Preview-Q6_K.gguf --ctx-size 64000 --n-gpu-layers 99 --temp 0.6 --top-p 0.95",
+                    "references": [
+                        {
+                            "link": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
