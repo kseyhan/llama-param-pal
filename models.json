@@ -110,6 +110,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "EXAONE-Deep",
+            "profiles": [
+                {
+                    "name": "chat",
+                    "command": "./llama-cli --model bartowski/LGAI-EXAONE_EXAONE-Deep-32B-GGUF/LGAI-EXAONE_EXAONE-Deep-32B-Q4_K_M.gguf --ctx-size 32768 --n-gpu-layers 99 --temp 0.6 --top-p 0.95",
+                    "references": [
+                        {
+                            "link": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
