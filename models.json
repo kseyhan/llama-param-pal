@@ -9,6 +9,9 @@
                     "references": [
                         "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli",
                         "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
+                    ],
+                    "notes": [
+                        "qwen team suggests to set the --presence-penalty parameter between 0 and 2 to reduce endless repetitions and adds that a higher value may occasionally result in language mixing and a slight decrease in model performance."
                     ]
                 },
                 {
@@ -17,6 +20,9 @@
                     "references": [
                         "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli",
                         "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
+                    ],
+                    "notes": [
+                        "qwen team suggests to set the --presence-penalty parameter between 0 and 2 to reduce endless repetitions and adds that a higher value may occasionally result in language mixing and a slight decrease in model performance."
                     ]
                 }
             ]
