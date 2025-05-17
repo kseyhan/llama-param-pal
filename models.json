@@ -1,11 +1,11 @@
 {
     "models": [
         {
-            "name": "Qwen3",
+            "name": "Qwen/Qwen3",
             "profiles": [
                 {
                     "name": "thinking",
-                    "command": "./llama-cli --model bartowski/Qwen_Qwen3-8B-GGUF/Qwen_Qwen3-8B-Q3_K_M.gguf --jinja --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0 --ctx-size 40960 --predict 32768",
+                    "command": "./llama-cli --model bartowski/Qwen_Qwen3-8B-GGUF/Qwen_Qwen3-8B-Q8_0.gguf --jinja --temp 0.6 --top-k 20 --top-p 0.95 --min-p 0 --ctx-size 40960 --predict 32768",
                     "references": [
                         "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli",
                         "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
@@ -16,7 +16,7 @@
                 },
                 {
                     "name": "non thinking",
-                    "command": "./llama-cli --model bartowski/Qwen_Qwen3-8B-GGUF/Qwen_Qwen3-8B-Q3_K_M.gguf --jinja --temp 0.7 --top-k 20 --top-p 0.8 --min-p 0 --ctx-size 40960 --predict 32768",
+                    "command": "./llama-cli --model bartowski/Qwen_Qwen3-8B-GGUF/Qwen_Qwen3-8B-Q8_0.gguf --jinja --temp 0.7 --top-k 20 --top-p 0.8 --min-p 0 --ctx-size 40960 --predict 32768",
                     "references": [
                         "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html#llama-cli",
                         "https://huggingface.co/Qwen/Qwen3-235B-A22B#switching-between-thinking-and-non-thinking-mode"
@@ -28,11 +28,11 @@
             ]
         },
         {
-            "name": "QwQ",
+            "name": "Qwen/QwQ",
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q4_K_M.gguf --ctx-size 32768 --temp 0.6 --min-p 0.01 --top-k 40 --top-p 0.95",
+                    "command": "./llama-cli --model unsloth-QwQ-32B-GGUF/QwQ-32B-Q8_0.gguf --ctx-size 32768 --temp 0.6 --min-p 0.01 --top-k 40 --top-p 0.95",
                     "references": [
                         "https://modelscope.cn/models/Qwen/QwQ-32B",
                         "https://huggingface.co/Qwen/QwQ-32B",
@@ -46,7 +46,7 @@
             ]
         },
         {
-            "name": "Llama-4",
+            "name": "meta-llama/Llama-4",
             "profiles": [
                 {
                     "name": "chat",
@@ -62,11 +62,11 @@
             ]
         },
         {
-            "name": "Gemma3",
+            "name": "google/gemma-3",
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model bartowski/google_gemma-3-27b-it-qat-GGUF/gemma-3-27b-it-Q4_K_M.gguf --ctx-size 131072 --temp 1.0 --repeat-penalty 1.0 --min-p 0.01 --top-k 64 --top-p 0.95",
+                    "command": "./llama-cli --model bartowski/google_gemma-3-27b-it-qat-GGUF/gemma-3-27b-it-Q8_0.gguf --ctx-size 131072 --temp 1.0 --repeat-penalty 1.0 --min-p 0.01 --top-k 64 --top-p 0.95",
                     "references": [
                         "https://ollama.com/library/gemma3/blobs/3116c5225075",
                         "https://docs.unsloth.ai/basics/gemma-3-how-to-run-and-fine-tune"
@@ -78,11 +78,11 @@
             ]
         },
         {
-            "name": "Phi-4-reasoning",
+            "name": "microsoft/Phi-4-reasoning",
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model bartowski/microsoft_Phi-4-reasoning-plus-GGUF/microsoft_Phi-4-reasoning-plus-Q4_K_M.gguf --ctx-size 32768 --temp 0.8 --top-k 50 --top-p 0.95 --reasoning-format deepseek",
+                    "command": "./llama-cli --model bartowski/microsoft_Phi-4-reasoning-plus-GGUF/microsoft_Phi-4-reasoning-plus-Q8_0.gguf --ctx-size 32768 --temp 0.8 --top-k 50 --top-p 0.95 --reasoning-format deepseek",
                     "references": [
                         "https://huggingface.co/microsoft/Phi-4-reasoning"
                     ],
@@ -93,43 +93,25 @@
             ]
         },
         {
-            "name": "DeepCoder-Preview",
+            "name": "mistralai/Mistral-Small",
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model bartowski/agentica-org_DeepCoder-14B-Preview-GGUF/agentica-org_DeepCoder-14B-Preview-Q6_K.gguf --ctx-size 131072 --temp 0.6 --top-p 0.95",
+                    "command": "./llama-cli --model bartowski/mistralai_Mistral-Small-3.1-24B-Instruct-2503-GGUF/mistralai_Mistral-Small-3.1-24B-Instruct-2503-GGUF --ctx-size 32768 --temp 0.15",
                     "references": [
-                        "https://huggingface.co/agentica-org/DeepCoder-14B-Preview"
-                    ],
-                    "notes": [
-                        "the model performs best with max_tokens set to at least 64000"
+                        "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503"
                     ]
                 }
             ]
         },
         {
-            "name": "EXAONE-Deep",
+            "name": "Qwen/WorldPM",
             "profiles": [
                 {
                     "name": "chat",
-                    "command": "./llama-cli --model bartowski/LGAI-EXAONE_EXAONE-Deep-32B-GGUF/LGAI-EXAONE_EXAONE-Deep-32B-Q4_K_M.gguf --ctx-size 32768 --temp 0.6 --top-p 0.95",
+                    "command": "./llama-cli --model bartowski/Qwen_WorldPM-72B-GGUF/Qwen_WorldPM-72B-Q8_0.gguf --ctx-size 131072 --temp 0.7 --min-p 0.01 --top-k 20 --top-p 0.8 --repeat-penalty 1.05",
                     "references": [
-                        "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B"
-                    ],
-                    "notes": [
-                        "Ensure the model starts with <thought>\\n for reasoning steps."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Mistral-Small-24B-Instruct-2501",
-            "profiles": [
-                {
-                    "name": "chat",
-                    "command": "./llama-cli --model bartowski/Mistral-Small-24B-Instruct-2501-GGUF/Mistral-Small-24B-Instruct-2501-Q4_K_M.gguf --ctx-size 32768 --temp 0.15",
-                    "references": [
-                        "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501"
+                        "https://huggingface.co/Qwen/WorldPM-72B"
                     ]
                 }
             ]
