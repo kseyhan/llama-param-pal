@@ -50,7 +50,7 @@
             "profiles": [
                 {
                     "name": "default",
-                    "command": "./llama-cli --model unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/Llama-4-Scout-17B-16E-Instruct-UD-IQ2_XXS.gguf --ctx-size 10485760 --temp 0.6 --min-p 0.01 --top-p 0.9",
+                    "command": "./llama-cli --model unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF/Llama-4-Scout-17B-16E-Instruct-Q8_0.gguf --ctx-size 10485760 --temp 0.6 --min-p 0.01 --top-p 0.9",
                     "references": [
                         "https://www.llama.com/docs/llama-everywhere/running-meta-llama-on-linux/",
                         "https://docs.unsloth.ai/basics/llama-4-how-to-run-and-fine-tune"
