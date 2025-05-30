@@ -105,13 +105,13 @@
             ]
         },
         {
-            "name": "Qwen/WorldPM",
+            "name": "mistralai/Devstral-Small-2505",
             "profiles": [
                 {
                     "name": "default",
-                    "command": "./llama-cli --model bartowski/Qwen_WorldPM-72B-GGUF/Qwen_WorldPM-72B-Q8_0.gguf --ctx-size 131072 --temp 0.7 --min-p 0.01 --top-k 20 --top-p 0.8 --repeat-penalty 1.05",
+                    "command": "./llama-cli --model bartowski/Qwen_WorldPM-72B-GGUF/Qwen_WorldPM-72B-Q8_0.gguf --ctx-size 131072 --temp 0.15",
                     "references": [
-                        "https://huggingface.co/Qwen/WorldPM-72B"
+                        "https://huggingface.co/mistralai/Devstral-Small-2505"
                     ]
                 }
             ]
